@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hunterhawk.github.io/archieves/index.html</loc>
+    <loc>http://hunterhawk.github.io/categories/index.html</loc>
     
-    <lastmod>2018-01-08T12:37:21.366Z</lastmod>
+    <lastmod>2018-01-09T00:25:12.776Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://hunterhawk.github.io/categories/index.html</loc>
+    <loc>http://hunterhawk.github.io/2018/01/07/hello-world/</loc>
     
-    <lastmod>2018-01-08T12:37:00.877Z</lastmod>
+    <lastmod>2018-01-09T00:24:35.404Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://hunterhawk.github.io/tags/index.html</loc>
     
-    <lastmod>2018-01-08T12:36:40.879Z</lastmod>
+    <lastmod>2018-01-09T00:20:51.701Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hunterhawk.github.io/404.html</loc>
+    
+    <lastmod>2018-01-08T13:26:17.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hunterhawk.github.io/archieves/index.html</loc>
+    
+    <lastmod>2018-01-08T12:37:21.366Z</lastmod>
     
   </url>
   
@@ -40,13 +54,6 @@
     <loc>http://hunterhawk.github.io/2018/01/08/test1/</loc>
     
     <lastmod>2018-01-08T02:18:36.630Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hunterhawk.github.io/2018/01/07/hello-world/</loc>
-    
-    <lastmod>2018-01-07T13:31:24.766Z</lastmod>
     
   </url>
   

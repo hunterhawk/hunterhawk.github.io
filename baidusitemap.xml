@@ -4,6 +4,29 @@
 
     
     
+  <url>
+    <loc>http://hunterhawk.github.io/2018/01/07/hello-world/</loc>
+    <lastmod>2018-01-09T00:24:35.404Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-01-07T13:31:24.766Z</pubTime>
+        
+        <tag>Testing</tag>
+         
+        <tag>Technology</tag>
+         
+         
+           
+             
+              <breadCrumb title="Test1" url="http://hunterhawk.github.io/categories/Test1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
     
     
@@ -29,21 +52,6 @@
         <display>
         <title>test1</title>
         <pubTime>2018-01-08T01:18:13.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://hunterhawk.github.io/2018/01/07/hello-world/</loc>
-    <lastmod>2018-01-07T13:31:24.766Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-01-07T13:31:24.766Z</pubTime>
         
          
            
