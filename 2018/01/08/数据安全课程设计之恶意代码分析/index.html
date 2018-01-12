@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Security," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="technology sharing">
+<meta name="description" content="目的和背景选题设计的背景随着网络技术的高速发展和信息时代的到来,通过互联网传播和共享信息资源已经成为人们的首选,然而,网络的开放性和灵活性在给人们带来便利的同时也引入了各式各样的安全问题。据国家互联网应急中心CNCERT 2008上半年的调查报告显示,各种网络安全事件数量与2007年上半年同期相比有较为显著的增加。在诸多的网络威胁中,恶意代码所占的比例和危害程度最大,国内外针对恶意代码的研究和防治">
+<meta name="keywords" content="Security">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据安全课程设计之恶意代码分析">
 <meta property="og:url" content="http://hunterhawk.github.io/2018/01/08/数据安全课程设计之恶意代码分析/index.html">
 <meta property="og:site_name" content="Hunterhawk&#39;s Blog">
-<meta property="og:description" content="technology sharing">
+<meta property="og:description" content="目的和背景选题设计的背景随着网络技术的高速发展和信息时代的到来,通过互联网传播和共享信息资源已经成为人们的首选,然而,网络的开放性和灵活性在给人们带来便利的同时也引入了各式各样的安全问题。据国家互联网应急中心CNCERT 2008上半年的调查报告显示,各种网络安全事件数量与2007年上半年同期相比有较为显著的增加。在诸多的网络威胁中,恶意代码所占的比例和危害程度最大,国内外针对恶意代码的研究和防治">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-08T02:23:56.455Z">
+<meta property="og:updated_time" content="2018-01-12T01:08:53.267Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据安全课程设计之恶意代码分析">
-<meta name="twitter:description" content="technology sharing">
+<meta name="twitter:description" content="目的和背景选题设计的背景随着网络技术的高速发展和信息时代的到来,通过互联网传播和共享信息资源已经成为人们的首选,然而,网络的开放性和灵活性在给人们带来便利的同时也引入了各式各样的安全问题。据国家互联网应急中心CNCERT 2008上半年的调查报告显示,各种网络安全事件数量与2007年上半年同期相比有较为显著的增加。在诸多的网络威胁中,恶意代码所占的比例和危害程度最大,国内外针对恶意代码的研究和防治">
 
 
 
@@ -396,7 +397,15 @@
       
 
       
-        
+        <h1 id="目的和背景"><a href="#目的和背景" class="headerlink" title="目的和背景"></a>目的和背景</h1><h2 id="选题设计的背景"><a href="#选题设计的背景" class="headerlink" title="选题设计的背景"></a>选题设计的背景</h2><pre><code>随着网络技术的高速发展和信息时代的到来,通过互联网传播和共享信息资源已经成为人们的首选,然而,网络的开放性和灵活性在给人们带来便利的同时也引入了各式各样的安全问题。据国家互联网应急中心CNCERT 2008上半年的调查报告显示,各种网络安全事件数量与2007年上半年同期相比有较为显著的增加。在诸多的网络威胁中,恶意代码所占的比例和危害程度最大,国内外针对恶意代码的研究和防治工作也从各方面展开。而伴随着震网、火焰病毒等一系列震惊全球的重大网络安全事件的发生,信息安全已经上升到国家战略层面的高度。在此背景下,我国也面临着敌对势力恶意网络攻击的严重威胁。在信息网络安全的诸多威胁中,恶意代码的危害无疑最大,这也成为网络安全研究领域的焦点。目前,在恶意代码研究方面,国内反病毒厂商大多集中研发应用层面的产品,基础技术研究的精力相对较少；国外反病毒厂商在恶意代码检测方面的技术比较成熟,但涉及商业利益,很难从公开渠道获取相关信息。
+</code></pre><h2 id="选题设计的目的"><a href="#选题设计的目的" class="headerlink" title="选题设计的目的"></a>选题设计的目的</h2><pre><code>在该课程设计选题中，目的想要实现对于示例恶意代码的类型划分、静态分析、动态分析等分析研究，在通过前期对恶意代码分析技术的了解掌握后，最终结合Windows注册表、Windows API以及逆向反汇编技术，分析两个经典的恶意Windows程序，分别为“熊猫烧香（武汉男孩）”病毒和“永恒之蓝”比特勒索病毒，跟踪其恶意代码的运行过程，实现一定程度的对抗与逆向。最后，根据对于熊猫烧香病毒运行机制的分析，结合其特有的攻击方式以及造成的危害情况，使用Microsoft Visual Studio 2013 Ultimate编写具有简易图形化用户界面的专杀工具对其进行专门查杀以及系统清除。
+</code></pre><h2 id="全文章节概述"><a href="#全文章节概述" class="headerlink" title="全文章节概述"></a>全文章节概述</h2><pre><code>本文第一章节为前言部分，主要介绍恶意代码分析领域当前的研究现状以及面临的主要威胁，并介绍选题的目的及意义所在。
+本文第二章节为恶意代码分析的基础技术方法介绍，包括静态分析（调试）方法，动态分析（调试）方法，以及相应的恶意代码分析实战。该章节目的在于为接下来面对经典具体病毒的分析与防治奠定基础，并引入恶意代码分析领域。
+本文第三章节为对于经典病毒熊猫烧香（又名“武汉男孩”）的调试与分析，具体分为对于该病毒的概述介绍，静态调试过程，动态调试过程，以及防范措施的设想，为第五章节设计专杀工具做好准备工作。
+本文第四章节为对于近年席卷世界的“永恒之蓝”比特勒索病毒的调试与分析，具体分析过程同第四章节，在此不再赘述。
+本文第五章节为在第三章节的研究调试基础上进行的熊猫烧香病毒专杀工具的设计与实现，本文中采用C++结合MFC编写具有图形化用户界面的专杀工具，内容主要包括设计的详细思路，各模块的划分以及具体算法的实现，并最终通过测试验证该专杀工具的有效性。
+本文第六章节为结论与后记部分，主要包括对于本次数据安全课程设计的完成情况、有待改进之处、对于未来改进的展望以及心得体会等。
+</code></pre><h1 id="恶意代码分析基础"><a href="#恶意代码分析基础" class="headerlink" title="恶意代码分析基础"></a>恶意代码分析基础</h1><h2 id="恶意代码分析综述"><a href="#恶意代码分析综述" class="headerlink" title="恶意代码分析综述"></a>恶意代码分析综述</h2><h3 id="恶意代码分类简介"><a href="#恶意代码分类简介" class="headerlink" title="恶意代码分类简介"></a>恶意代码分类简介</h3><h3 id="文件加壳与恶意代码混淆"><a href="#文件加壳与恶意代码混淆" class="headerlink" title="文件加壳与恶意代码混淆"></a>文件加壳与恶意代码混淆</h3><h2 id="恶意代码调试方法及实战"><a href="#恶意代码调试方法及实战" class="headerlink" title="恶意代码调试方法及实战"></a>恶意代码调试方法及实战</h2><h3 id="Lab01-01-dll恶意文件分析"><a href="#Lab01-01-dll恶意文件分析" class="headerlink" title="Lab01-01.dll恶意文件分析"></a>Lab01-01.dll恶意文件分析</h3><h3 id="Lab01-01-exe恶意文件分析"><a href="#Lab01-01-exe恶意文件分析" class="headerlink" title="Lab01-01.exe恶意文件分析"></a>Lab01-01.exe恶意文件分析</h3><h2 id="分析结论与反病毒引擎测试"><a href="#分析结论与反病毒引擎测试" class="headerlink" title="分析结论与反病毒引擎测试"></a>分析结论与反病毒引擎测试</h2><h3 id="整体分析结论"><a href="#整体分析结论" class="headerlink" title="整体分析结论"></a>整体分析结论</h3><h3 id="反病毒引擎测试检验"><a href="#反病毒引擎测试检验" class="headerlink" title="反病毒引擎测试检验"></a>反病毒引擎测试检验</h3><h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><h1 id="熊猫烧香恶意代码分析"><a href="#熊猫烧香恶意代码分析" class="headerlink" title="熊猫烧香恶意代码分析"></a>熊猫烧香恶意代码分析</h1><h2 id="熊猫烧香病毒概述"><a href="#熊猫烧香病毒概述" class="headerlink" title="熊猫烧香病毒概述"></a>熊猫烧香病毒概述</h2><h3 id="测试环境及工具简介"><a href="#测试环境及工具简介" class="headerlink" title="测试环境及工具简介"></a>测试环境及工具简介</h3><h3 id="病毒行为流程"><a href="#病毒行为流程" class="headerlink" title="病毒行为流程"></a>病毒行为流程</h3><h2 id="病毒危害行为分析"><a href="#病毒危害行为分析" class="headerlink" title="病毒危害行为分析"></a>病毒危害行为分析</h2><h3 id="运行病毒"><a href="#运行病毒" class="headerlink" title="运行病毒"></a>运行病毒</h3><h3 id="系统目录创建病毒程序"><a href="#系统目录创建病毒程序" class="headerlink" title="系统目录创建病毒程序"></a>系统目录创建病毒程序</h3><h3 id="各目录生成Desktop-ini记录文件"><a href="#各目录生成Desktop-ini记录文件" class="headerlink" title="各目录生成Desktop_.ini记录文件"></a>各目录生成Desktop_.ini记录文件</h3><h3 id="感染全盘二进制文件与脚本文件"><a href="#感染全盘二进制文件与脚本文件" class="headerlink" title="感染全盘二进制文件与脚本文件"></a>感染全盘二进制文件与脚本文件</h3><h3 id="添加系统开机启动项"><a href="#添加系统开机启动项" class="headerlink" title="添加系统开机启动项"></a>添加系统开机启动项</h3><h3 id="盘符根目录生成setup-exe与autorun-inf文件"><a href="#盘符根目录生成setup-exe与autorun-inf文件" class="headerlink" title="盘符根目录生成setup.exe与autorun.inf文件"></a>盘符根目录生成setup.exe与autorun.inf文件</h3><h2 id="病毒恶意代码分析"><a href="#病毒恶意代码分析" class="headerlink" title="病毒恶意代码分析"></a>病毒恶意代码分析</h2><h3 id="病毒自我复制分析"><a href="#病毒自我复制分析" class="headerlink" title="病毒自我复制分析"></a>病毒自我复制分析</h3><h3 id="病毒感染全盘分析"><a href="#病毒感染全盘分析" class="headerlink" title="病毒感染全盘分析"></a>病毒感染全盘分析</h3><h3 id="病毒自我保护分析"><a href="#病毒自我保护分析" class="headerlink" title="病毒自我保护分析"></a>病毒自我保护分析</h3><h2 id="病毒代码整体分析总结"><a href="#病毒代码整体分析总结" class="headerlink" title="病毒代码整体分析总结"></a>病毒代码整体分析总结</h2><h3 id="病毒恶意行为总结"><a href="#病毒恶意行为总结" class="headerlink" title="病毒恶意行为总结"></a>病毒恶意行为总结</h3><h3 id="解决方案设计"><a href="#解决方案设计" class="headerlink" title="解决方案设计"></a>解决方案设计</h3><h2 id="反病毒引擎测试检验-1"><a href="#反病毒引擎测试检验-1" class="headerlink" title="反病毒引擎测试检验"></a>反病毒引擎测试检验</h2><h2 id="本章小结-1"><a href="#本章小结-1" class="headerlink" title="本章小结"></a>本章小结</h2><h1 id="熊猫烧香专杀工具的设计与实现"><a href="#熊猫烧香专杀工具的设计与实现" class="headerlink" title="熊猫烧香专杀工具的设计与实现"></a>熊猫烧香专杀工具的设计与实现</h1><h2 id="设计思想阐述"><a href="#设计思想阐述" class="headerlink" title="设计思想阐述"></a>设计思想阐述</h2><h2 id="界面设计实现"><a href="#界面设计实现" class="headerlink" title="界面设计实现"></a>界面设计实现</h2><h2 id="重点算法模块"><a href="#重点算法模块" class="headerlink" title="重点算法模块"></a>重点算法模块</h2><h3 id="CRC32算法计算散列值"><a href="#CRC32算法计算散列值" class="headerlink" title="CRC32算法计算散列值"></a>CRC32算法计算散列值</h3><h3 id="查找进程与提升权限"><a href="#查找进程与提升权限" class="headerlink" title="查找进程与提升权限"></a>查找进程与提升权限</h3><h3 id="查找并删除Desktop-ini文件"><a href="#查找并删除Desktop-ini文件" class="headerlink" title="查找并删除Desktop_.ini文件"></a>查找并删除Desktop_.ini文件</h3><h3 id="遍历并结束spoclsv-exe进程"><a href="#遍历并结束spoclsv-exe进程" class="headerlink" title="遍历并结束spoclsv.exe进程"></a>遍历并结束spoclsv.exe进程</h3><h3 id="删除每个盘符下的setup-exe与autorun-inf文件"><a href="#删除每个盘符下的setup-exe与autorun-inf文件" class="headerlink" title="删除每个盘符下的setup.exe与autorun.inf文件"></a>删除每个盘符下的setup.exe与autorun.inf文件</h3><h3 id="修复注册表内容"><a href="#修复注册表内容" class="headerlink" title="修复注册表内容"></a>修复注册表内容</h3><h2 id="工具测试与自评"><a href="#工具测试与自评" class="headerlink" title="工具测试与自评"></a>工具测试与自评</h2><h2 id="本章小结-2"><a href="#本章小结-2" class="headerlink" title="本章小结"></a>本章小结</h2><h1 id="“永恒之蓝”比特勒索病毒"><a href="#“永恒之蓝”比特勒索病毒" class="headerlink" title="“永恒之蓝”比特勒索病毒"></a>“永恒之蓝”比特勒索病毒</h1><h2 id="“永恒之蓝”比特勒索病毒概述"><a href="#“永恒之蓝”比特勒索病毒概述" class="headerlink" title="“永恒之蓝”比特勒索病毒概述"></a>“永恒之蓝”比特勒索病毒概述</h2><h2 id="病毒行为分析"><a href="#病毒行为分析" class="headerlink" title="病毒行为分析"></a>病毒行为分析</h2><h2 id="解决方案与防范措施"><a href="#解决方案与防范措施" class="headerlink" title="解决方案与防范措施"></a>解决方案与防范措施</h2><h2 id="本章小结-3"><a href="#本章小结-3" class="headerlink" title="本章小结"></a>本章小结</h2><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1>
       
     </div>
     
@@ -439,6 +448,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Security/" rel="tag"># Security</a>
+          
+        </div>
       
 
       
@@ -509,8 +524,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -547,7 +571,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -613,6 +637,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目的和背景"><span class="nav-number">1.</span> <span class="nav-text">目的和背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选题设计的背景"><span class="nav-number">1.1.</span> <span class="nav-text">选题设计的背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选题设计的目的"><span class="nav-number">1.2.</span> <span class="nav-text">选题设计的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全文章节概述"><span class="nav-number">1.3.</span> <span class="nav-text">全文章节概述</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#恶意代码分析基础"><span class="nav-number">2.</span> <span class="nav-text">恶意代码分析基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#恶意代码分析综述"><span class="nav-number">2.1.</span> <span class="nav-text">恶意代码分析综述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#恶意代码分类简介"><span class="nav-number">2.1.1.</span> <span class="nav-text">恶意代码分类简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件加壳与恶意代码混淆"><span class="nav-number">2.1.2.</span> <span class="nav-text">文件加壳与恶意代码混淆</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#恶意代码调试方法及实战"><span class="nav-number">2.2.</span> <span class="nav-text">恶意代码调试方法及实战</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Lab01-01-dll恶意文件分析"><span class="nav-number">2.2.1.</span> <span class="nav-text">Lab01-01.dll恶意文件分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lab01-01-exe恶意文件分析"><span class="nav-number">2.2.2.</span> <span class="nav-text">Lab01-01.exe恶意文件分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析结论与反病毒引擎测试"><span class="nav-number">2.3.</span> <span class="nav-text">分析结论与反病毒引擎测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#整体分析结论"><span class="nav-number">2.3.1.</span> <span class="nav-text">整体分析结论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反病毒引擎测试检验"><span class="nav-number">2.3.2.</span> <span class="nav-text">反病毒引擎测试检验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本章小结"><span class="nav-number">2.4.</span> <span class="nav-text">本章小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#熊猫烧香恶意代码分析"><span class="nav-number">3.</span> <span class="nav-text">熊猫烧香恶意代码分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#熊猫烧香病毒概述"><span class="nav-number">3.1.</span> <span class="nav-text">熊猫烧香病毒概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#测试环境及工具简介"><span class="nav-number">3.1.1.</span> <span class="nav-text">测试环境及工具简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#病毒行为流程"><span class="nav-number">3.1.2.</span> <span class="nav-text">病毒行为流程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#病毒危害行为分析"><span class="nav-number">3.2.</span> <span class="nav-text">病毒危害行为分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#运行病毒"><span class="nav-number">3.2.1.</span> <span class="nav-text">运行病毒</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统目录创建病毒程序"><span class="nav-number">3.2.2.</span> <span class="nav-text">系统目录创建病毒程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#各目录生成Desktop-ini记录文件"><span class="nav-number">3.2.3.</span> <span class="nav-text">各目录生成Desktop_.ini记录文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#感染全盘二进制文件与脚本文件"><span class="nav-number">3.2.4.</span> <span class="nav-text">感染全盘二进制文件与脚本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加系统开机启动项"><span class="nav-number">3.2.5.</span> <span class="nav-text">添加系统开机启动项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盘符根目录生成setup-exe与autorun-inf文件"><span class="nav-number">3.2.6.</span> <span class="nav-text">盘符根目录生成setup.exe与autorun.inf文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#病毒恶意代码分析"><span class="nav-number">3.3.</span> <span class="nav-text">病毒恶意代码分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#病毒自我复制分析"><span class="nav-number">3.3.1.</span> <span class="nav-text">病毒自我复制分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#病毒感染全盘分析"><span class="nav-number">3.3.2.</span> <span class="nav-text">病毒感染全盘分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#病毒自我保护分析"><span class="nav-number">3.3.3.</span> <span class="nav-text">病毒自我保护分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#病毒代码整体分析总结"><span class="nav-number">3.4.</span> <span class="nav-text">病毒代码整体分析总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#病毒恶意行为总结"><span class="nav-number">3.4.1.</span> <span class="nav-text">病毒恶意行为总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案设计"><span class="nav-number">3.4.2.</span> <span class="nav-text">解决方案设计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反病毒引擎测试检验-1"><span class="nav-number">3.5.</span> <span class="nav-text">反病毒引擎测试检验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本章小结-1"><span class="nav-number">3.6.</span> <span class="nav-text">本章小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#熊猫烧香专杀工具的设计与实现"><span class="nav-number">4.</span> <span class="nav-text">熊猫烧香专杀工具的设计与实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计思想阐述"><span class="nav-number">4.1.</span> <span class="nav-text">设计思想阐述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#界面设计实现"><span class="nav-number">4.2.</span> <span class="nav-text">界面设计实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重点算法模块"><span class="nav-number">4.3.</span> <span class="nav-text">重点算法模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CRC32算法计算散列值"><span class="nav-number">4.3.1.</span> <span class="nav-text">CRC32算法计算散列值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找进程与提升权限"><span class="nav-number">4.3.2.</span> <span class="nav-text">查找进程与提升权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找并删除Desktop-ini文件"><span class="nav-number">4.3.3.</span> <span class="nav-text">查找并删除Desktop_.ini文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历并结束spoclsv-exe进程"><span class="nav-number">4.3.4.</span> <span class="nav-text">遍历并结束spoclsv.exe进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除每个盘符下的setup-exe与autorun-inf文件"><span class="nav-number">4.3.5.</span> <span class="nav-text">删除每个盘符下的setup.exe与autorun.inf文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修复注册表内容"><span class="nav-number">4.3.6.</span> <span class="nav-text">修复注册表内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具测试与自评"><span class="nav-number">4.4.</span> <span class="nav-text">工具测试与自评</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本章小结-2"><span class="nav-number">4.5.</span> <span class="nav-text">本章小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#“永恒之蓝”比特勒索病毒"><span class="nav-number">5.</span> <span class="nav-text">“永恒之蓝”比特勒索病毒</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#“永恒之蓝”比特勒索病毒概述"><span class="nav-number">5.1.</span> <span class="nav-text">“永恒之蓝”比特勒索病毒概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#病毒行为分析"><span class="nav-number">5.2.</span> <span class="nav-text">病毒行为分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案与防范措施"><span class="nav-number">5.3.</span> <span class="nav-text">解决方案与防范措施</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本章小结-3"><span class="nav-number">5.4.</span> <span class="nav-text">本章小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结论"><span class="nav-number">6.</span> <span class="nav-text">结论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">7.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
