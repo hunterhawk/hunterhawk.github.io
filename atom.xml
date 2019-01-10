@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hunterhawk.github.io/"/>
-  <updated>2019-01-10T03:07:53.139Z</updated>
+  <updated>2019-01-10T03:30:03.193Z</updated>
   <id>http://hunterhawk.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo部署流程</title>
+    <link href="http://hunterhawk.github.io/2019/01/10/hexo%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/"/>
+    <id>http://hunterhawk.github.io/2019/01/10/hexo部署流程/</id>
+    <published>2019-01-10T03:13:20.000Z</published>
+    <updated>2019-01-10T03:30:03.193Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Blog-using-Hexo"><a href="#Blog-using-Hexo" class="headerlink" title="Blog using Hexo"></a>Blog using Hexo</h1><h2 id="Install-Node"><a href="#Install-Node" class="headerlink" title="Install Node"></a>Install Node</h2><h2 id="Install-Git"><a href="#Install-Git" class="headerlink" title="Install Git"></a>Install Git</h2><h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install  Hexo"></a>Install  Hexo</h2><p>  use command : npm install -g hexo</p><h2 id="Create-the-project-folder-and-Init"><a href="#Create-the-project-folder-and-Init" class="headerlink" title="Create the project folder and Init"></a>Create the project folder and Init</h2><p>  use command : hexo init</p><h2 id="Generate-static-pages"><a href="#Generate-static-pages" class="headerlink" title="Generate static pages"></a>Generate static pages</h2><p>  use command : hexo generate (or hexo g)</p><h2 id="local-running"><a href="#local-running" class="headerlink" title="local running"></a>local running</h2><p>  use command : hexo server (default port:4000)<br>  if error: npm install hexo-server ; npm install hexo-server –save</p><h2 id="Access-with-Github"><a href="#Access-with-Github" class="headerlink" title="Access with Github"></a>Access with Github</h2><p>  open _config.yml,write in the deploy as following:<br>​    deploy:<br>​      type: git<br>​      repository: git@github.com:[your name]/[your name].github.io.git<br>​      branch: master</p><h2 id="deploy-steps"><a href="#deploy-steps" class="headerlink" title="deploy steps"></a>deploy steps</h2><p>  hexo clean<br>  hexo generate<br>  hexo deploy</p><h2 id="useful-command"><a href="#useful-command" class="headerlink" title="useful command"></a>useful command</h2><p>  hexo new “postName”             新建文章<br>  hexo new page “pageName”        新建页面<br>  hexo generate                   生成静态页面至public目录<br>  hexo server                     开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>  hexo deploy                     将.deploy目录部署到GitHub<br>  hexo help                       查看帮助<br>  hexo version                    查看Hexo的版本</p><h2 id="一些基本路径"><a href="#一些基本路径" class="headerlink" title="一些基本路径"></a>一些基本路径</h2><p>  文章                            source/_posts<br>  修改头像、友情链接                _config.yml<br>  修改名字                         public/index.html</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Blog-using-Hexo&quot;&gt;&lt;a href=&quot;#Blog-using-Hexo&quot; class=&quot;headerlink&quot; title=&quot;Blog using Hexo&quot;&gt;&lt;/a&gt;Blog using Hexo&lt;/h1&gt;&lt;h2 id=&quot;Install-Node&quot;
+      
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="http://hunterhawk.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Hexo" scheme="http://hunterhawk.github.io/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="http://hunterhawk.github.io/tags/Blog/"/>
+    
+  </entry>
   
   <entry>
     <title>2019 test</title>
